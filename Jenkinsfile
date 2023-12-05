@@ -4,6 +4,7 @@ pipeline {
     stage('Script') {
       steps {
         sh 'echo "Hello !"'
+        sh '/disk/sbt/bin/sbt test'
       }
     }
   }
